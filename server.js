@@ -4,7 +4,7 @@ var app = express()
 var path = require('path')
 var PORT = process.env.PORT || 8000
 
-var mySheet = new GoogleSheets('1kib56LbVv1cWgGDfc2fyTQMzYtVVIT54dL36G1PbSh8')
+var mySheet = new GoogleSheets('YOURGOOGLESHEETURL')
 app.set('view engine', 'pug')
 
 mySheet.getRows(1, function(err, rowData){
